@@ -323,7 +323,7 @@
       <!-- example member -->
       <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
         <div class="card p-3 text-center h-100">
-          <img src="images\aswini1.jpg" alt="Organizer" class="team-photo mx-auto mb-3">
+          <img src="images/aswini1.jpg" alt="Organizer" class="team-photo mx-auto mb-3">
           <h6 class="mb-0"> Mr.Aswin swain </h6>
           <small class="text-muted">Faculty In-charge</small>
         </div>
@@ -331,7 +331,7 @@
 
       <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="80">
         <div class="card p-3 text-center h-100">
-          <img src="images\group.jpg" alt="Organizer" class="team-photo mx-auto mb-3">
+          <img src="images/group.jpg" alt="Organizer" class="team-photo mx-auto mb-3">
           <h6 class="mb-0">Surya pradhan ,Sameer sahu </h6>
           <small class="text-muted">Srikant s. ,Rohan d.</small>
         </div>
@@ -339,7 +339,7 @@
 
       <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="160">
         <div class="card p-3 text-center h-100">
-          <img src="https://images.unsplash.com/photo-1545996124-0b3a1b8d9a1f?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="Organizer" class="team-photo mx-auto mb-3">
+          <img src="images/bidu.jpg" alt="Organizer" class="team-photo mx-auto mb-3">
           <h6 class="mb-0">Ms.Bidusmita Swain</h6>
           <small class="text-muted"> Girls Coordinator</small>
         </div>
@@ -420,7 +420,7 @@
   </div>
 </section>
 
-<!-- REGISTER MODAL (Google Form embed placeholder) -->
+<!-- REGISTER MODAL (Google Form Only) -->
 <div class="modal fade" id="registerModal" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
@@ -429,51 +429,25 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <p class="small text-muted">We recommend using a Google Form to collect registrations. Paste your form's embed link below in the <code>src</code> attribute to activate automatic registration.</p>
+        <!-- Info text (optional, can remove if not needed) -->
+        <p class="small text-muted">
+          Please fill out the official registration form below to participate in the event.
+        </p>
 
-        <!-- DEFAULT: example form placeholder (replace with your Google Form embed URL) -->
+        <!-- GOOGLE FORM EMBED -->
         <div class="ratio ratio-4x3">
-          <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSezt3Djm7GqCxiIcFA29EfzmcVz-Zzizvxgoi6pzmL3jqERbg/viewform?usp=headerS" frameborder="0">Loading…</iframe>
+          <iframe 
+            id="gform" 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSezt3Djm7GqCxiIcFA29EfzmcVz-Zzizvxgoi6pzmL3jqERbg/viewform?usp=headerS" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
         </div>
-
-        <hr>
-        <h6 class="mt-3">Quick Manual Register</h6>
-        <form id="quickRegister">
-          <div class="row g-2">
-            <div class="col-md-6">
-              <input class="form-control" placeholder="Full Name" required id="r_name">
-            </div>
-            <div class="col-md-6">
-              <input class="form-control" placeholder="Email" required id="r_email" type="email">
-            </div>
-            <div class="col-md-6">
-              <input class="form-control" placeholder="Phone" required id="r_phone" type="tel">
-            </div>
-            <div class="col-md-6">
-              <select class="form-select" id="r_event">
-                <option value="">Select Event</option>
-                <option>Web Craft Challenge</option>
-                <option>Code Craft Cup</option>
-                <option>Paper Podium</option>
-                <option>Quiz Quest</option>
-                <option>Bug Bounty</option>
-                <option>Reels Studio</option>
-                <option>Art Station</option>
-                <option>Feel The Rhythm</option>
-                <option>Stage Storm</option>
-              </select>
-            </div>
-          </div>
-          <div class="mt-3 d-flex justify-content-end">
-            <button class="btn btn-secondary me-2" type="reset">Reset</button>
-            <button class="btn btn-primary btn-primary-custom" type="submit">Submit</button>
-          </div>
-        </form>
-
       </div>
     </div>
   </div>
 </div>
+
 
 <!-- SIMPLE DETAILS MODAL (reused) -->
 <div class="modal fade" id="detailsWeb" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h6 class="modal-title">Web Craft — Details</h6><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p class="small text-muted">Time: 3 days. Submit zipped folder or GitHub link. Judging: Design, Responsiveness, Functionality.</p></div></div></div></div>
